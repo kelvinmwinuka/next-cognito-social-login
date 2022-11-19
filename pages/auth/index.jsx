@@ -1,4 +1,4 @@
-import useAuth from "../../hooks/useAuth"
+import useAuth from "../../hooks/useAuth";
 
 export default function Auth() {
   const { auth_url } = useAuth();
