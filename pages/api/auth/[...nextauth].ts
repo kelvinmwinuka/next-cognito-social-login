@@ -21,6 +21,7 @@ function getProvider(provider: TProvider): Provider {
     clientId: COGNITO_CLIENT_ID,
     clientSecret: COGNITO_CLIENT_SECRET,
     wellKnown: `https://cognito-idp.${COGNITO_REGION}.amazonaws.com/${COGNITO_USER_POOL_ID}/.well-known/openid-configuration`,
+    checks: ["nonce"],
     authorization: {
       url: `${COGNITO_DOMAIN}/oauth2/authorize`,
       params: {
