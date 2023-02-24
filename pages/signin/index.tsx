@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { getProviders, signIn } from "next-auth/react";
 
-export default function Auth() {
+export default function SignIn() {
   const [providers, setProviders] = useState(null);
 
   useEffect(() => {
